@@ -1,0 +1,88 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.Cocoa.XIB" version="3.0" toolsVersion="6250" systemVersion="14A389" targetRuntime="MacOSX.Cocoa" propertyAccessControl="none" useAutolayout="YES">
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.CocoaPlugin" version="6250"/>
+    </dependencies>
+    <objects>
+        <customObject id="-2" userLabel="File's Owner" customClass="DFSheetWindowController">
+            <connections>
+                <outlet property="window" destination="F0z-JX-Cv5" id="gIp-Ho-8D9"/>
+            </connections>
+        </customObject>
+        <customObject id="-1" userLabel="First Responder" customClass="FirstResponder"/>
+        <customObject id="-3" userLabel="Application" customClass="NSObject"/>
+        <window title="Window" allowsToolTipsWhenApplicationIsInactive="NO" autorecalculatesKeyViewLoop="NO" oneShot="NO" releasedWhenClosed="NO" visibleAtLaunch="NO" animationBehavior="default" id="F0z-JX-Cv5">
+            <windowStyleMask key="styleMask" titled="YES" closable="YES" miniaturizable="YES" resizable="YES"/>
+            <windowPositionMask key="initialPositionMask" leftStrut="YES" rightStrut="YES" topStrut="YES" bottomStrut="YES"/>
+            <rect key="contentRect" x="196" y="240" width="434" height="167"/>
+            <rect key="screenRect" x="0.0" y="0.0" width="1680" height="1027"/>
+            <view key="contentView" id="se5-gp-TjO">
+                <rect key="frame" x="0.0" y="0.0" width="434" height="167"/>
+                <autoresizingMask key="autoresizingMask"/>
+                <subviews>
+                    <textField horizontalHuggingPriority="251" verticalHuggingPriority="750" translatesAutoresizingMaskIntoConstraints="NO" id="Jka-Be-Y4u">
+                        <rect key="frame" x="18" y="130" width="173" height="17"/>
+                        <textFieldCell key="cell" scrollable="YES" lineBreakMode="clipping" sendsActionOnEndEditing="YES" title="This is really a NSWindow" id="d6a-ue-Rje">
+                            <font key="font" metaFont="systemBold"/>
+                            <color key="textColor" name="labelColor" catalog="System" colorSpace="catalog"/>
+                            <color key="backgroundColor" name="controlColor" catalog="System" colorSpace="catalog"/>
+                        </textFieldCell>
+                    </textField>
+                    <button verticalHuggingPriority="750" translatesAutoresizingMaskIntoConstraints="NO" id="LP2-Fy-O0H">
+                        <rect key="frame" x="254" y="13" width="83" height="32"/>
+                        <buttonCell key="cell" type="push" title="Cancel" bezelStyle="rounded" alignment="center" borderStyle="border" imageScaling="proportionallyDown" inset="2" id="Y6o-CF-2Iv">
+                            <behavior key="behavior" pushIn="YES" lightByBackground="YES" lightByGray="YES"/>
+                            <font key="font" metaFont="system"/>
+                            <string key="keyEquivalent" base64-UTF8="YES">
+Gw
+</string>
+                        </buttonCell>
+                        <connections>
+                            <action selector="cancelButtonAction:" target="-2" id="WAN-3b-xR5"/>
+                        </connections>
+                    </button>
+                    <button verticalHuggingPriority="750" translatesAutoresizingMaskIntoConstraints="NO" id="76y-J0-8Sc">
+                        <rect key="frame" x="337" y="13" width="83" height="32"/>
+                        <buttonCell key="cell" type="push" title="OK" bezelStyle="rounded" alignment="center" borderStyle="border" imageScaling="proportionallyDown" inset="2" id="Cch-3c-xUh">
+                            <behavior key="behavior" pushIn="YES" lightByBackground="YES" lightByGray="YES"/>
+                            <font key="font" metaFont="system"/>
+                            <string key="keyEquivalent" base64-UTF8="YES">
+DQ
+</string>
+                        </buttonCell>
+                        <connections>
+                            <action selector="OKButtonAction:" target="-2" id="WiX-f9-nfK"/>
+                        </connections>
+                    </button>
+                    <textField verticalHuggingPriority="750" horizontalCompressionResistancePriority="250" setsMaxLayoutWidthAtFirstLayout="YES" translatesAutoresizingMaskIntoConstraints="NO" id="YNg-mW-iRD">
+                        <rect key="frame" x="18" y="88" width="398" height="34"/>
+                        <textFieldCell key="cell" sendsActionOnEndEditing="YES" title="Anything you add to the content view of the window will be displayed in the sheet." id="gAP-Gy-leQ">
+                            <font key="font" metaFont="system"/>
+                            <color key="textColor" name="labelColor" catalog="System" colorSpace="catalog"/>
+                            <color key="backgroundColor" name="controlColor" catalog="System" colorSpace="catalog"/>
+                        </textFieldCell>
+                    </textField>
+                </subviews>
+                <constraints>
+                    <constraint firstItem="LP2-Fy-O0H" firstAttribute="top" relation="greaterThanOrEqual" secondItem="YNg-mW-iRD" secondAttribute="bottom" constant="40" id="A7c-IU-gCw"/>
+                    <constraint firstItem="Jka-Be-Y4u" firstAttribute="leading" secondItem="se5-gp-TjO" secondAttribute="leading" constant="20" id="FNl-od-Wa9"/>
+                    <constraint firstAttribute="trailing" secondItem="76y-J0-8Sc" secondAttribute="trailing" constant="20" symbolic="YES" id="GCE-sB-5yT"/>
+                    <constraint firstItem="76y-J0-8Sc" firstAttribute="width" secondItem="LP2-Fy-O0H" secondAttribute="width" id="S1e-qn-CtR"/>
+                    <constraint firstAttribute="trailing" relation="greaterThanOrEqual" secondItem="Jka-Be-Y4u" secondAttribute="trailing" constant="20" symbolic="YES" id="W6A-0k-Qsg"/>
+                    <constraint firstItem="LP2-Fy-O0H" firstAttribute="leading" relation="greaterThanOrEqual" secondItem="se5-gp-TjO" secondAttribute="leading" constant="20" symbolic="YES" id="XfU-r9-DVb"/>
+                    <constraint firstItem="YNg-mW-iRD" firstAttribute="leading" secondItem="Jka-Be-Y4u" secondAttribute="leading" id="Y6Y-EV-J6f"/>
+                    <constraint firstItem="76y-J0-8Sc" firstAttribute="baseline" secondItem="LP2-Fy-O0H" secondAttribute="baseline" id="bmZ-ci-woy"/>
+                    <constraint firstAttribute="trailing" secondItem="YNg-mW-iRD" secondAttribute="trailing" constant="20" id="i8a-hs-v6S"/>
+                    <constraint firstItem="YNg-mW-iRD" firstAttribute="top" secondItem="Jka-Be-Y4u" secondAttribute="bottom" constant="8" symbolic="YES" id="iXs-Uy-E49"/>
+                    <constraint firstItem="76y-J0-8Sc" firstAttribute="leading" secondItem="LP2-Fy-O0H" secondAttribute="trailing" constant="12" symbolic="YES" id="m7w-cx-aP4"/>
+                    <constraint firstItem="Jka-Be-Y4u" firstAttribute="top" secondItem="se5-gp-TjO" secondAttribute="top" constant="20" id="r1P-F1-t7M"/>
+                    <constraint firstAttribute="bottom" secondItem="76y-J0-8Sc" secondAttribute="bottom" constant="20" symbolic="YES" id="xXw-P1-qWS"/>
+                </constraints>
+            </view>
+            <connections>
+                <outlet property="delegate" destination="-2" id="0bl-1N-AYu"/>
+            </connections>
+            <point key="canvasLocation" x="315" y="187.5"/>
+        </window>
+    </objects>
+</document>

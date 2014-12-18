@@ -1,5 +1,5 @@
 //
-//  AppDelegate.h
+//  DFSheetWindowController.h
 //  SheetExample
 //
 //  Created by Daniel Farrell on 18/12/2014.
@@ -8,7 +8,6 @@
 
 #import <Cocoa/Cocoa.h>
 
-@interface AppDelegate : NSObject <NSApplicationDelegate>
+@interface DFSheetWindowController : NSWindowController
 
 @end
-

@@ -12,6 +12,8 @@
 		65DEAC071A43574300C46054 /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 65DEAC061A43574300C46054 /* Images.xcassets */; };
 		65DEAC0A1A43574300C46054 /* MainMenu.xib in Resources */ = {isa = PBXBuildFile; fileRef = 65DEAC081A43574300C46054 /* MainMenu.xib */; };
 		65DEAC161A43574300C46054 /* SheetExampleTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 65DEAC151A43574300C46054 /* SheetExampleTests.m */; };
+		65DEAC2F1A435A1A00C46054 /* DFSheetWindowController.m in Sources */ = {isa = PBXBuildFile; fileRef = 65DEAC2D1A435A1A00C46054 /* DFSheetWindowController.m */; };
+		65DEAC301A435A1A00C46054 /* DFSheetWindowController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 65DEAC2E1A435A1A00C46054 /* DFSheetWindowController.xib */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -35,6 +37,9 @@
 		65DEAC0F1A43574300C46054 /* SheetExampleTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = SheetExampleTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		65DEAC141A43574300C46054 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		65DEAC151A43574300C46054 /* SheetExampleTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = SheetExampleTests.m; sourceTree = "<group>"; };
+		65DEAC2C1A435A1A00C46054 /* DFSheetWindowController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DFSheetWindowController.h; sourceTree = "<group>"; };
+		65DEAC2D1A435A1A00C46054 /* DFSheetWindowController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DFSheetWindowController.m; sourceTree = "<group>"; };
+		65DEAC2E1A435A1A00C46054 /* DFSheetWindowController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = DFSheetWindowController.xib; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -76,6 +81,9 @@
 		65DEABFE1A43574300C46054 /* SheetExample */ = {
 			isa = PBXGroup;
 			children = (
+				65DEAC2C1A435A1A00C46054 /* DFSheetWindowController.h */,
+				65DEAC2D1A435A1A00C46054 /* DFSheetWindowController.m */,
+				65DEAC2E1A435A1A00C46054 /* DFSheetWindowController.xib */,
 				65DEAC011A43574300C46054 /* AppDelegate.h */,
 				65DEAC021A43574300C46054 /* AppDelegate.m */,
 				65DEAC061A43574300C46054 /* Images.xcassets */,
@@ -193,6 +201,7 @@
 			files = (
 				65DEAC071A43574300C46054 /* Images.xcassets in Resources */,
 				65DEAC0A1A43574300C46054 /* MainMenu.xib in Resources */,
+				65DEAC301A435A1A00C46054 /* DFSheetWindowController.xib in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -212,6 +221,7 @@
 			files = (
 				65DEAC051A43574300C46054 /* main.m in Sources */,
 				65DEAC031A43574300C46054 /* AppDelegate.m in Sources */,
+				65DEAC2F1A435A1A00C46054 /* DFSheetWindowController.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
