@@ -26,3 +26,12 @@ Launch the sheet and control the repsonse using the following code:
         }
     }];
 
+Dismiss the sheet with one of the following model responses, you might want to do this using action methods assigned to your OK and Cancel buttons,
+
+    - (IBAction)cancelButtonAction:(id)sender {
+        [[[self window] sheetParent] endSheet:self.window returnCode:NSModalResponseCancel];
+    }
+    
+    - (IBAction)OKButtonAction:(id)sender {
+        [[[self window] sheetParent] endSheet:self.window returnCode:NSModalResponseOK];
+    }
